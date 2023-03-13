@@ -27,5 +27,7 @@ public:
 
 	std::vector<int> getDownDiagonal();
 	void setDownDiagonal(std::vector<int>);
+
+	std::vector<int> getAllElements();
 };
 

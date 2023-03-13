@@ -25,9 +25,15 @@
     <Filter Include="Файлы заголовков\Utility">
       <UniqueIdentifier>{df084013-2f46-41b9-945e-4ed4e60717bb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Search">
+      <UniqueIdentifier>{f15199d0-620f-4339-b084-fc32dc419339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Search">
+      <UniqueIdentifier>{c84cdd45-53b4-47a9-b07e-d412d6d28bb6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lab6.cpp">
+    <ClCompile Include="Lab7.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="AbstractSort.cpp">
@@ -56,6 +62,18 @@
     </ClCompile>
     <ClCompile Include="Matrix.cpp">
       <Filter>Исходные файлы\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractSearch.cpp">
+      <Filter>Исходные файлы\Search</Filter>
+    </ClCompile>
+    <ClCompile Include="SequentialSearch.cpp">
+      <Filter>Исходные файлы\Search</Filter>
+    </ClCompile>
+    <ClCompile Include="Data.cpp">
+      <Filter>Исходные файлы\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearch.cpp">
+      <Filter>Исходные файлы\Search</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -86,5 +104,22 @@
     <ClInclude Include="Matrix.h">
       <Filter>Файлы заголовков\Utility</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractSearch.h">
+      <Filter>Файлы заголовков\Search</Filter>
+    </ClInclude>
+    <ClInclude Include="SequentialSearch.h">
+      <Filter>Файлы заголовков\Search</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearch.h">
+      <Filter>Файлы заголовков\Search</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Lab7.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

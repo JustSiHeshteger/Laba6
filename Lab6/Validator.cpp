@@ -76,3 +76,14 @@ bool Validator::checkNumber(int n)
 
 	return true;
 }
+
+bool Validator::checkNumber(int n, int min, int max)
+{
+	if (n < min || n > max)
+	{
+		std::cout << "¬ведено некорректное значение." << std::endl;
+		return false;
+	}
+
+	return true;
+}

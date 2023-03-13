@@ -4,7 +4,7 @@ Matrix::Matrix(int m, int n) {
 	this->M = m;
 	this->N = n;
     srand(time(0));
-    this->fillMatrix(10000);
+    this->fillMatrix(10);
 }
 
 void Matrix::fillMatrix(int randomNum) {
@@ -110,4 +110,36 @@ void Matrix::setDownDiagonal(std::vector<int> arr) {
             }
         }
     }
+}
+
+std::vector<int> Matrix::getAllElements() {
+    std::vector<int> allElements;
+
+    int iBegin = 0, iEnd = 0, jBegin = 0, jEnd = 0;
+
+    int k = 1;
+    int i = 0;
+    int j = 0;
+
+    while (k <= this->N * this->M) {
+        allElements.push_back(this->matrix[i][j]);
+        if (i == iBegin && j < this->M - jEnd - 1)
+            ++j;
+        else if (j == this->M - jEnd - 1 && i < this->N - iEnd - 1)
+            ++i;
+        else if (i == this->N - iEnd - 1 && j > jBegin)
+            --j;
+        else
+            --i;
+
+        if ((i == iBegin + 1) && (j == jBegin) && (jBegin != this->M - jEnd - 1)) {
+            ++iBegin;
+            ++iEnd;
+            ++jBegin;
+            ++jEnd;
+        }
+        ++k;
+    }
+
+    return allElements;
 }
